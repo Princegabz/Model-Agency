@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 Oct 2021, 8:10:55 AM
+    Author     : gabri
+*/
+       /* W3schools,2021*/
+       body 
+        {
+         margin: 0;
+         font-family: Arial, Helvetica, sans-serif;
+        }
+        /* W3schools,2021*/
+        .topnav 
+        {
+        overflow: hidden;
+        background-color: black;
+        }
+        .topnav a 
+        {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+       .topnav a:hover 
+       {
+        background-color: #FFC0CB;
+        color: black;
+       }
+       .topnav a.active   
+       {                
+       background-color: #FFC0CB; 
+       color: white;
+       }
+
+       /* W3schools,2021*/
+        footer 
+       {
+       text-align: center;
+       padding: 3px;
+       background-color: black;
+       color: white;
+       }
+       
+       /* W3schools,2021*/
+       .fa 
+       {
+        padding: 10px;
+        font-size: 25px;
+        width: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+       }
+
+       .fa:hover 
+       {
+       opacity: 0.7;
+       }
+
+       .fa-facebook 
+       {
+       background: #3B5998;
+       color: white;
+       }
+
+       .fa-twitter 
+       {
+       background: #55ACEE;
+       color: white;
+       }
+
+       .fa-youtube 
+       {
+       background: #bb0000;
+       color: white;
+       }
+
+       .fa-instagram 
+       {
+        background: #125688;
+        color: white;
+       }
+       div 
+       {
+        text-align: justify;
+        text-justify: inter-word;
+       }

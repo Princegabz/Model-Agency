@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Get Involved</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--W3schools,2021-->
+        <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+        <!--W3schools,2021-->
+        <style>
+            .form-inline 
+            {  
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            }
+
+            .form-inline label 
+            {
+            margin: 5px 10px 5px 0;
+            }
+
+            .form-inline input 
+            {
+            vertical-align: middle;
+            margin: 5px 10px 5px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            }
+
+            @media (max-width: 1400px) 
+            {
+            .form-inline input 
+            {
+                margin: 10px 0;
+            }
+  
+            .form-inline 
+            {
+            flex-direction: column;
+            align-items: stretch;
+            }
+            }
+            input[type=submit] 
+            {
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: left;
+            input[type=reset] 
+            {
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: left;
+            }
+            input[type=text]
+            {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid black;
+            }
+
+       </style>
+       <!--W3schools,2021-->
+       <script>
+            function validateForm() 
+            {
+                let x = document.forms["myForm"]["fname"].value;
+                if (x == "") 
+                {
+                    alert("First Name must be filled out");
+                    return false;
+                }
+                let x = document.forms["myForm"]["lname"].value;
+                if (x == "") 
+                {
+                    alert("Last Name must be filled out");
+                    return false;
+                }
+                let x = document.forms["myForm"]["Email"].value;
+                if (x == "") 
+                {
+                    alert("Email must be filled out");
+                    return false;
+                }
+                let x = document.forms["myForm"]["number"].value;
+                if (x == "") 
+                {
+                    alert("number must be filled out");
+                    return false;
+                }
+                function ValidateEmail(inputText)
+                {
+                var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if (inputText.value.match(mailformat))
+                {
+                    alert("Valid email address!");
+                    document.form1.text1.focus();
+                    return true;
+                } else
+                {
+                    alert("You have entered an invalid email address!");
+                    document.form1.text1.focus();
+                    return false;
+                }
+            }
+       </script>
+    </head>
+    <body bgcolor ="pink">
+        <!--W3schools,2021-->
+        <div class="topnav">
+         <a href="Homepage.html">Home</a>
+         <a href= "AboutUs.html"> About Us</a> 
+         <a href="OurWork.html">Our Work</a>     
+         <a href="Gallery.html">Photo Gallery</a>
+         <a class="active" href="GetInvolved.html">Get Involved</a>
+         <a href="ContactUs.html">Contact Us</a>
+         <img src="Images/LOGO.png" width="98" height="44" alt="Logo">
+        </div>
+        <br>
+        <div>
+        <h1>Get Involved</h1>
+        <br>   
+         <h2>Personal Details</h2>  <!--w3schools,2021-->
+          <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" action="mailto:21006976@vcconnect.co.za">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="" required=""><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="" required=""><br>
+          <label for="Email">Email:</label><br>
+          <input type="text" id="Email" name="Email" value="" required=""><br>
+          <label for="number">Contact number:</label><br>
+          <input type="text" id="number" name="number" value="" required="" maxlength="10"><br>
+          
+          <h2>Interests</h2> <!--w3schools,2021-->
+          <input type="checkbox" id="Interests1" name="Interests1" value="Fashion">
+          <label for="Interests1">Fashion</label><br>
+          <input type="checkbox" id="Interests2" name="Interests2" value="Theatre">
+          <label for="Interests2">Photography</label><br>
+          <input type="checkbox" id="Interests3" name="Interests3" value="Concerts">
+          <label for="Interests3">Modeling</label>
+
+          <h2>Submit</h2> <!--w3schools,2021-->
+          <p>Submit details as: </p>
+          <input type="radio" id="S" name="Frequency" value="S">
+          <label for="S">Sponsor</label><br>
+          <input type="radio" id="V" name="Frequency" value="V">
+          <label for="V">Volunteer</label><br>
+          <input type="radio" id="C" name="Frequency" value="C">
+          <label for="C">Client</label><br>
+          <br>
+          </form> 
+          <h2>Enquiry</h2>
+          <label for="Enquiry">Enquiries:</label><br>
+          <textarea rows="4" cols="50" name="comment" form="usrform">
+          </textarea><!--W3schools,2021-->
+          <br>
+          <input type="submit" name="submit" value="Submit" onclick='ValidateEmail(document.form1.text1)'/>
+          <input type="reset" value="Reset">
+          <br>
+          <br>
+          </div>
+          <!--W3schools,2021-->
+        <footer>
+            <p>Copyright Ⓒ 2021 Royalty Emporium <br>
+            <a href="mailto:21006976@vcconnect.co.za">21006976@vcconnect.co.za</a>
+            <br>
+            <br>
+            <a href="https://www.facebook.com/PrinceGabz77/" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/models" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com/channel/UCcRJz9UUUoGvElr1yxEUndA" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/emporium_prince/" target="_blank" class="fa fa-instagram"></a>
+            </p>
+        </footer>
+    </body>
+</html>
